@@ -5,3 +5,4 @@ venv
 release
 /config.json
 __pycache__
+to-do.md

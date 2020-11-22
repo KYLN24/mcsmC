@@ -111,7 +111,7 @@ def mainLoop(server: MCSMServer):
     """
     arg = input("--> ")
     if arg == 'help':
-        print(help(mainLoop))
+        print(mainLoop.__doc__)
     elif arg == 'status':
         server.status()
     elif arg == 'start':
