@@ -1,7 +1,7 @@
 # mcsmC
 Minecraft Server Manager Commandline Tool
 
-![mcsmC 0.1](https://img.shields.io/badge/mcsmC-0.1-brightgreen)
+[![mcsmC 0.1](https://img.shields.io/badge/mcsmC-0.1-brightgreen)](https://github.com/KYLN24/mcsmC)
 [![MCSM 8.6.15](https://img.shields.io/badge/MCSM-8.6.15-yellow)](http://mcsm.suwings.top)
 [![Python 3.9.0](https://img.shields.io/badge/Python-3.9.0-blue)](https://www.python.org/downloads/release/python-390/)
 
