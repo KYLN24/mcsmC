@@ -4,7 +4,7 @@ import os, requests
 
 
 def isFirstTime() -> bool:
-    if os.path.exists('config.json'):
+    if os.path.exists('config.yml'):
         return False
     else:
         return True

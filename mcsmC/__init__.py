@@ -2,7 +2,7 @@
 mcsmC: Minecraft Server Manager CommandLine Tool
 """
 
-import json, requests
+import json, requests, yaml
 from . import check
 
 
@@ -87,8 +87,8 @@ class MCSMServer:
 
 
 def loadConfig() -> MCSMServer:
-    with open('config.json', 'r') as cfgF:
-        cfg = json.load(cfgF)
+    with open('config.yml', 'r') as cfgF:
+        cfg = yaml.load(cfgF, Loader=yaml.FullLoader)
         server = MCSMServer(cfg['serverAddr'], cfg['serverName'], cfg['isSSL'], cfg['apiKey'])
         if server.isSSL:
             print("通过 HTTPS ", end='')

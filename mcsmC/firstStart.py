@@ -1,6 +1,6 @@
 # firstRun.py
 
-import json
+import yaml
 from mcsmC import MCSMServer
 from . import check
 
@@ -22,7 +22,7 @@ def firstRun():
         if check.connectionCheck(serverAddr, serverName, isSSL):
             print("服务器连接成功！")
         else:
-            print("服务器连接失败，初始化将继续，你稍后可在 config.json 文件中修改相关配置。")
+            print("服务器连接失败，初始化将继续，你稍后可在 config.yml 文件中修改相关配置。")
 
     apiKey = "000000000000000000000000000000"
     apiKey = input("输入 API Key(000000000000000000000000000000):")
@@ -30,7 +30,7 @@ def firstRun():
         if check.apiKeyCheck(serverAddr, serverName, isSSL, apiKey):
             print("API Key 有效！")
         else:
-            print("API Key 无效或服务器无法连通，初始化将继续，你稍后可在 config.json 文件中修改相关配置。")
+            print("API Key 无效或服务器无法连通，初始化将继续，你稍后可在 config.yml 文件中修改相关配置。")
 
     serverDict = {
         'serverAddr': serverAddr,
@@ -39,7 +39,6 @@ def firstRun():
         'apiKey': apiKey
     }
 
-    configFileContent = json.dumps(serverDict, sort_keys=True, indent=4, separators=(',', ': '))
-    with open("config.json", "w") as f:
-        f.write(configFileContent)
-    print("初始化完成！配置已覆盖，你可在 config.json 文件中继续修改配置")
+    with open("config.yml", "w") as f:
+        yaml.dump(serverDict, f)
+    print("初始化完成！配置已覆盖，你可在 config.yml 文件中继续修改配置")

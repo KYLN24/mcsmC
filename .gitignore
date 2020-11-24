@@ -3,6 +3,6 @@
 .vscode
 venv
 release
-/config.json
+/config.yml
 __pycache__
 to-do.md
