@@ -22,10 +22,10 @@ apiKey: 00000000000000000000000000000000
 # 是否使用 HTTPS
 isSSL: false
 
-# MCDR 地址
+# MCSM 地址
 serverAddr: '127.0.0.1:23333'
 
-# MCDR 服务端名称
+# MCSM 服务端名称
 serverName: main
 ```
 
