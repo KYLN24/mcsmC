@@ -14,18 +14,20 @@ Minecraft Server Manager Commandline Tool
 
 第一次运行会启动初始化助手生成配置文件，亦可手动创建 `config.yml` 配置文件
 
-#### config.yml模板
+#### 配置文件模版
 ```yaml
+# config.yml
+
 # 你的 MCSM 账户 APIKey
 apiKey: 00000000000000000000000000000000
 
 # 是否使用 HTTPS
 isSSL: false
 
-# MCSM 地址
+# MCSM 控制面板地址
 serverAddr: '127.0.0.1:23333'
 
-# MCSM 服务端名称
+# MCSM 服务器名称 (id)
 serverName: main
 ```
 
