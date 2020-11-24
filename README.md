@@ -25,7 +25,7 @@ apiKey: 00000000000000000000000000000000
 isSSL: false
 
 # MCSM 控制面板地址
-serverAddr: '127.0.0.1:23333'
+serverAddr: 127.0.0.1:23333
 
 # MCSM 服务器名称 (id)
 serverName: main
